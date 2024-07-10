@@ -99,6 +99,11 @@ process.load("HeavyIonsAnalysis.JetAnalysis.FullJetSequence_puLimitedpPb")
 # Use this version for JEC
 #process.load("HeavyIonsAnalysis.JetAnalysis.FullJetSequence_JECPP")
 
+##############################
+# Adding gen jets information
+##############################
+process.ak4PFJetAnalyzer.genjetTag = "ak4GenJets" 
+
 #####################################################################################
 
 ############################
@@ -203,10 +208,7 @@ process.hltMuTree.vertices = cms.InputTag("offlinePrimaryVertices")
 process.hltMuTree.genparticle = cms.InputTag("genParticles")
 
 
-##############################
-# Adding gen jets information
-##############################
-process.ak4PFJetAnalyzer.genjetTag = "ak4GenJets"  
+ 
 
 
 #########################
